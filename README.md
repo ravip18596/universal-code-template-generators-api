@@ -28,3 +28,7 @@ The stack is Python 3.12 + FastAPI + Pydantic v2
     └── workflows
         └── ci.yml
 ```
+
+## Design Doc
+
+See [design_doc.md](./design_doc.md)

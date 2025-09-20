@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "template-service"
+version = "1.0.0"
+dependencies = ["fastapi>=0.110", "uvicorn[standard]>=0.29"]
+optional-dependencies.dev = ["pytest>=8", "pytest-cov>=5", "syrupy>=4"]
+
+[project.scripts]
+template-service = "template_service.main:run"
